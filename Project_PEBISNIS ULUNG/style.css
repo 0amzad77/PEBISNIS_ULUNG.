@@ -1,0 +1,75 @@
+:root {
+    --primary: #FFFFFF;
+    --sendary: #282C4B;
+    --Black: #000000;
+    --quotion: #FB3F6C;
+    --lorange: #F17216;
+    --dorange: #F07922;
+    --slateGray: #747582;
+    --salmon: #FF876C;
+    --menubtn: #FF698D;
+}
+
+* {
+    text-decoration: none;
+    font-family: "Ubuntu",
+        sans-serif;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 24px 54px;
+    background-image: linear-gradient(to right, #ff698d, #fb3f6c);
+}
+/* Navbar */
+.logo a {
+    color: var(--quotion);
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo_color {
+    color: var(--Black);
+}
+
+#navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: var(--slateGray);
+    font: size 16px;
+    font-weight: 400;
+
+
+}
+
+li a:hover {
+    color: var(--Black);
+}
+.btn_menu {
+    color: var(--primary);
+    padding: 12px 30px;
+    border-radius: 80px;
+    border: solid, var(--menubtn) 1px;
+}
+
+.btn_menu a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--sendary);
+}
