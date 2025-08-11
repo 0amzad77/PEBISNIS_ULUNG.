@@ -1,0 +1,167 @@
+:root {
+    --primary: #FFFFFF;
+    --sendary: #282C4B;
+    --Black: #000000;
+    --quotion: #FB3F6C;
+    --lorange: #F17216;
+    --dorange: #F07922;
+    --slateGray: #747582;
+    --salmon: #FF876C;
+    --menubtn: rgba(255, 105, 141, 0.5) ;
+    --underline: #FF698D;
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+    /* Shared Styles */
+    .display-flex {
+        display: flex;
+    }
+
+
+    /* navbar style */
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .Ubuntu-sans-font {
+        font-family: "Ubuntu", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .navbar,
+    .hero,
+    main {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: 24px 54px;
+        background-image: linear-gradient(to right, #ff698d, #fb3f6c);
+        border: var(--primary) solid 2px;
+        border-radius: 135.07px;
+        box-shadow: #000000;
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    /* Navbar */
+    .brand {
+        color: var(--quotion);
+        font-style: italic;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .logo_color {
+        color: var(--Black);
+    }
+
+    .nav-item {
+        list-style: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--slateGray);
+    }
+
+
+    .nav-link {
+        text-decoration: none;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav_link {
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: var(--quotion);
+    }
+
+    .btn_menu {
+        color: var(--primary);
+        padding: 12px 30px;
+        border-radius: 80px;
+        border: 1px solid rgba(255, 105, 141, 0.5);
+    }
+
+    .btn_menu a {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--sendary);
+    }
+
+    .watch-video {
+        font-size: 13px;
+        margin-left: 40px;
+        color: var(--sendary);
+    }
+    .hero-bg {
+        background-image: url(/Project_PEBISNIS_ULUNG/images/Group\ 648.png);
+        background-size: cover;
+    }
+
+    h3 {
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--dorange);
+
+    }
+h1{
+    font-weight:700;
+    font-size: 58px;
+
+}
+    .greeting {
+        position: relative;
+    }
+
+    .greeting::after {
+        content: "";
+        width: 100%;
+        height: 11px;
+        background-image: url(/Project_PEBISNIS_ULUNG/images/Vector\ 20.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+.hero-text{
+    font-size:20px ;
+    font-weight: 400;
+    margin-right: 200px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+.hero-btn{
+margin-bottom: 150px;
+}
+.hero-item{
+    margin-top: 200px;
+}
+.hero-item-img{
+width: 100%;
+margin-top: 170px;
+}
+.hero-item-img img{
+    width: 115%;
+
+
+}
+    /* responsive media query */
+    @media screen and (max-width:576px) {
+
+        .navbar,
+        .nav-link {
+            flex-direction: column;
+        }
+    }
